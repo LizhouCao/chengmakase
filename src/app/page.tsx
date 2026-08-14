@@ -58,6 +58,28 @@ export default function Home() {
         </p>
       </aside>
 
+      {/* LEFT TEXT - MOBILE */}
+      {!selectedFish && (
+        <div
+          className="
+            pointer-events-none
+            fixed
+            left-2
+            top-1/2
+            z-10
+            -translate-y-1/2
+            lg:hidden
+          "
+        >
+          <p
+            className="text-[9px] tracking-[0.28em] text-[#8f887d] opacity-50"
+            style={{ writingMode: "vertical-rl" }}
+          >
+            旬を味わい、一期一会を楽しむ
+          </p>
+        </div>
+      )}
+
       {/* RIGHT OMAKASE */}
       <aside
         className={`
