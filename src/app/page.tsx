@@ -212,7 +212,7 @@ export default function Home() {
           </div>
         </aside>
       )}
-      
+
       {/* MOBILE FISH DETAIL */}
       {selectedItem && (
         <div
@@ -461,6 +461,33 @@ export default function Home() {
         />
 
       </section>
+
+    {/* QR CODE - DESKTOP ONLY */}
+    {!selectedFish && (
+      <div
+        className="
+          fixed
+          bottom-6
+          right-6
+          z-40
+          hidden
+          text-center
+          lg:block
+        "
+      >
+        <div className="bg-white p-2 shadow-sm">
+          <img
+            src="/images/chengmakase-qr.png"
+            alt="Scan to open Chengmakase menu"
+            className="h-[90px] w-[90px]"
+          />
+        </div>
+
+        <div className="mt-2 text-[9px] tracking-[0.18em] text-[#8f887d]">
+          SCAN TO EXPLORE
+        </div>
+      </div>
+    )}
 
     </main>
   );
