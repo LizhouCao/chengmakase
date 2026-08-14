@@ -212,7 +212,98 @@ export default function Home() {
           </div>
         </aside>
       )}
+      
+      {/* MOBILE FISH DETAIL */}
+      {selectedItem && (
+        <div
+          className="
+            fixed
+            inset-0
+            z-50
+            overflow-y-auto
+            bg-[#f3efe5]
+            px-5
+            py-5
+            lg:hidden
+          "
+        >
+          {/* Close */}
+          <div className="flex justify-end">
+            <button
+              type="button"
+              onClick={() => setSelectedFish(null)}
+              className="
+                cursor-pointer
+                text-[32px]
+                font-light
+                text-[#8f887d]
+              "
+              aria-label="Close fish details"
+            >
+              ×
+            </button>
+          </div>
 
+          <div className="mx-auto mt-2 max-w-[520px]">
+
+            {/* Fish image */}
+            {selectedItem.image ? (
+              <div className="flex aspect-[4/3] w-full items-center justify-center overflow-hidden bg-white">
+                <img
+                  src={selectedItem.image}
+                  alt={selectedItem.english}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            ) : (
+              <div className="aspect-[4/3] w-full bg-[#ded8ce]" />
+            )}
+
+            {/* Chinese name */}
+            <div className="mt-7 text-[26px] tracking-[0.08em]">
+              {selectedItem.chinese}
+            </div>
+
+            {/* English name */}
+            <div className="mt-2 text-[13px] tracking-[0.16em] text-[#665f57]">
+              {selectedItem.english}
+            </div>
+
+            {/* Fish info */}
+            <div className="mt-6 border-t border-[#c9c1b6] pt-5">
+
+              {selectedItem.description && (
+                <p className="text-[14px] leading-7 text-[#6f685f]">
+                  {selectedItem.description}
+                </p>
+              )}
+
+              {selectedItem.season && (
+                <div className="mt-5">
+                  <div className="text-[11px] tracking-[0.18em] text-[#8f887d]">
+                    SEASON
+                  </div>
+                  <div className="mt-1 text-[14px]">
+                    {selectedItem.season}
+                  </div>
+                </div>
+              )}
+
+              {selectedItem.taste && (
+                <div className="mt-4">
+                  <div className="text-[11px] tracking-[0.18em] text-[#8f887d]">
+                    TASTE
+                  </div>
+                  <div className="mt-1 text-[14px]">
+                    {selectedItem.taste}
+                  </div>
+                </div>
+              )}
+
+            </div>
+          </div>
+        </div>
+      )}
       {/* CENTER MENU */}
       <section
         className={`
