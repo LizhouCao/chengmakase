@@ -40,7 +40,7 @@ export default function Home() {
           bottom-0
           left-0
           z-0
-          w-[170px]
+          w-[150px]
           opacity-35
           sm:w-[280px]
           sm:opacity-55
