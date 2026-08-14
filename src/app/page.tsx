@@ -64,7 +64,7 @@ export default function Home() {
           className="
             pointer-events-none
             fixed
-            left-2
+            left-4
             top-1/2
             z-10
             -translate-y-1/2
@@ -72,7 +72,7 @@ export default function Home() {
           "
         >
           <p
-            className="text-[9px] tracking-[0.28em] text-[#8f887d] opacity-50"
+            className="text-[13px] tracking-[0.32em] text-[#8f887d] opacity-50"
             style={{ writingMode: "vertical-rl" }}
           >
             旬を味わい、一期一会を楽しむ
