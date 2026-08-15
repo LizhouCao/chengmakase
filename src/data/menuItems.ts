@@ -119,13 +119,13 @@ export const menuItems: MenuItem[] = [
   },
 
   {
-    chinese: "艶然·虾夷马粪海胆",
-    english: "Enzen Ezo Bafun Uni",
-    image: "/images/fish/enzen-bafun-uni.png",
+    chinese: "艶然·北紫海胆",
+    english: "Kita Murasaki Uni",
+    image: "/images/fish/kika-uni.png",
     description:
-      "虾夷马粪海胆色泽浓郁、味道集中，以甜味、鲜味和柔滑质地著称。",
-    season: "Seasonal",
-    taste: "Sweet · Rich · Umami",
+      "北紫海胆（Northern sea urchin）色泽浓郁、味道集中，以甜味、鲜味和柔滑质地著称。",
+    season: "Summer",
+    taste: "Sweet · Delicate · Clean",
   },
 
   {
@@ -135,7 +135,7 @@ export const menuItems: MenuItem[] = [
     description:
       "高等级虾夷马粪海胆，拥有浓郁海洋鲜味和柔滑、接近奶油般的口感。",
     season: "Seasonal",
-    taste: "Rich · Sweet · Creamy",
+    taste: "Rich · Umami · Creamy",
   },
 
   {
